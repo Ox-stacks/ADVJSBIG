@@ -4,15 +4,10 @@ const User = require('../models/User');
 // Get all quizzes
 exports.getQuizzes = async (req, res, next) => {
   try {
-    const quizzes = await Quiz.find().select('title description');
-    
-    res.status(200).json({
-      success: true,
-      count: quizzes.length,
-      data: quizzes
-    });
+    const quizzes = await Quiz.find().select('title description questions'); // Include 'questions'
+    res.status(200).json({ success: true, data: quizzes });
   } catch (error) {
-    next(error);
+    res.status(500).json({ success: false, message: 'Failed to fetch quizzes' });
   }
 };
 
