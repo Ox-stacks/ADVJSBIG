@@ -34,6 +34,12 @@ const Profile = ({ user }) => {
     });
   };
 
+  const getScoreClass = (score) => {
+    if (score >= 80) return 'high-score';
+    if (score >= 60) return 'medium-score';
+    return 'low-score';
+  };
+
   if (loading) return <div className="loading">Loading profile...</div>;
   if (error) return <div className="error">{error}</div>;
 
@@ -65,7 +71,7 @@ const Profile = ({ user }) => {
                 {results.map((result, index) => (
                   <tr key={index}>
                     <td>{result.quizId.title}</td>
-                    <td>{result.score}%</td>
+                    <td className={getScoreClass(result.score)}>{result.score}%</td>
                     <td>{formatDate(result.dateTaken)}</td>
                   </tr>
                 ))}
