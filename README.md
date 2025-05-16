@@ -33,13 +33,19 @@ Once you have the files establish the MongoDB connection:
   ## Installation
 Now in to visual studio code and open a new terminal.
 Inside the terminal input these command lines:
-npm install
-cd client
-npm install
-then you can close that terminal or hit cd..
-then run these two commands
-npm run seed
-npm run dev
+1. npm install
+2. cd client
+3. npm install
+4. then you can close that terminal or hit cd..
+5. then run these two commands:
+6. npm run seed
+7. npm run dev
+
+
+
+
+
+
 
 ## Interacting with MongoDB database
 To interact more with MongoDB database:
