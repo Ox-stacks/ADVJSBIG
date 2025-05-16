@@ -4,20 +4,7 @@ This is the Quiz app!
 It is an interactive quiz game application with 5 different full stack questions games to choose from.
 fully equipped with a register, profile, home screen, and it stores the user results in the MongoDB database.
 
-## Backend
-- A Node.js/Express server that handles API requests
-- MongoDB database for data storage using Mongoose ODM
-- JWT authentication with cookie-based sessions
-- RESTful API endpoints for users, quizzes, and results
-- Middleware for route protection and error handling
-
-## Frontend
-- React application with React Router for navigation
-- Axios for API requests with cookie support
-- Responsive UI components for quizzes, results, and user profiles
-- Authentication flow with login/register functionality
-
-## Get Program
+## Get the Program
 1. switch to master branch
 2. click the green "Code" button for the drop down menu and click "Open with GitHub Desktop"
 3. When redirected to the GitHub Desktop click "Clone"
@@ -41,12 +28,6 @@ Inside the terminal input these command lines:
 6. npm run seed
 7. npm run dev
 
-
-
-
-
-
-
 ## Interacting with MongoDB database
 To interact more with MongoDB database:
 The seed file should automatically insert 2 folders into the mongoDB database named "users' and "quizzes" after you fully interact with the app.
@@ -56,6 +37,18 @@ In the QuizApp folder on mongoDB compass click the + icon to "create a collectio
 Do this a second time and type in "users" in lowercase. 
 This should automatically update the MongoDB database.
 
+## Backend
+- A Node.js/Express server that handles API requests
+- MongoDB database for data storage using Mongoose ODM
+- JWT authentication with cookie-based sessions
+- RESTful API endpoints for users, quizzes, and results
+- Middleware for route protection and error handling
+
+## Frontend
+- React application with React Router for navigation
+- Axios for API requests with cookie support
+- Responsive UI components for quizzes, results, and user profiles
+- Authentication flow with login/register functionality
 
 
 ## Extras
